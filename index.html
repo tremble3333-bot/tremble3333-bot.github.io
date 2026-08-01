@@ -4,66 +4,200 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yusuke Furue — Japan Market Entry Partner</title>
+<meta name="description" content="I launch exceptional overseas products in Japan via Makuake and GREEN FUNDING — fully funded by me, demand-proven before inventory. Time-boxed exclusivity, honest terms.">
+<meta property="og:title" content="Yusuke Furue — Japan Market Entry Partner">
+<meta property="og:description" content="Zero-risk Japan launches for overseas product makers: crowdfunding-first, funded by me, inventory only after demand is proven.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tremble3333-bot.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%23c73e3a'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,640&family=Inter:wght@400;500;600&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#f7f5f0; --ink:#1a1c1e; --sub:#5c6166; --accent:#b4552d; --card:#ffffff; --line:#e5e1d8;
+    --ink:#191817; --paper:#faf8f4; --sub:#6b6660; --line:#e6e1d8;
+    --red:#c73e3a; /* 朱色 */
+    --card:#ffffff;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --bg:#16181a; --ink:#f0ede6; --sub:#a3a8ad; --accent:#e0764a; --card:#1f2225; --line:#33373b; }
+    :root{ --ink:#ece9e2; --paper:#171614; --sub:#9b968e; --line:#33302b; --card:#201e1b; }
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--ink);font-family:"Avenir Next","Helvetica Neue",Helvetica,"Hiragino Sans",Arial,sans-serif;line-height:1.65}
-  .wrap{max-width:720px;margin:0 auto;padding:64px 24px 80px}
-  .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600}
-  h1{font-size:clamp(28px,6vw,40px);line-height:1.2;margin:10px 0 6px;font-weight:700}
-  .lede{font-size:17px;color:var(--sub);margin-bottom:40px}
-  h2{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--sub);margin:44px 0 14px;font-weight:600}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:12px}
-  .card b{display:block;margin-bottom:4px}
-  .card p{color:var(--sub);font-size:15px}
-  .steps{counter-reset:s}
-  .steps .card{position:relative;padding-left:58px}
-  .steps .card::before{counter-increment:s;content:counter(s);position:absolute;left:20px;top:20px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center}
-  .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-  .facts .card{margin:0}
-  .facts .n{font-size:26px;font-weight:700;color:var(--accent)}
-  .facts .l{font-size:13px;color:var(--sub)}
-  .contact{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-size:15px}
-  .contact a{color:var(--accent);text-decoration:none;font-weight:600}
-  .contact a:hover{text-decoration:underline}
-  .foot{margin-top:28px;font-size:12px;color:var(--sub)}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:Inter,"Hiragino Sans",sans-serif;line-height:1.7;font-size:16px}
+  .serif{font-family:Fraunces,Georgia,serif}
+  .jp{font-family:"Noto Serif JP","Hiragino Mincho ProN",serif}
+  .wrap{max-width:840px;margin:0 auto;padding:0 28px}
+
+  /* hero */
+  header{padding:88px 0 72px;border-bottom:1px solid var(--line)}
+  .mark{display:flex;align-items:center;gap:10px;margin-bottom:36px}
+  .mark .dot{width:12px;height:12px;border-radius:50%;background:var(--red)}
+  .mark .t{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--sub);font-weight:600}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:640;font-size:clamp(34px,6.4vw,58px);line-height:1.12;letter-spacing:-.01em;max-width:15em}
+  h1 em{font-style:normal;color:var(--red)}
+  .who{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;margin-top:28px}
+  .who .name{font-size:18px;font-weight:600}
+  .who .kanji{color:var(--sub);font-size:15px}
+  .who .loc{color:var(--sub);font-size:14px}
+  .hero-lede{margin-top:18px;font-size:17.5px;color:var(--sub);max-width:38em}
+  .hero-cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none}
+  .btn.primary{background:var(--red);color:#fff}
+  .btn.ghost{border:1px solid var(--line);color:var(--ink)}
+  .btn:hover{opacity:.88}
+
+  /* sections */
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:30px}
+  .sec-head .no{font-family:Fraunces,Georgia,serif;color:var(--red);font-size:15px;font-weight:640}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:640;font-size:26px;letter-spacing:-.01em}
+
+  /* proof strip */
+  .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  .proof>div{background:var(--card);padding:22px 20px}
+  .proof .n{font-family:Fraunces,Georgia,serif;font-size:30px;font-weight:640;color:var(--ink)}
+  .proof .l{font-size:13px;color:var(--sub);margin-top:4px;line-height:1.5}
+  .proof-note{font-size:12.5px;color:var(--sub);margin-top:10px}
+
+  /* steps */
+  .step{display:grid;grid-template-columns:64px 1fr;gap:0 22px;padding:26px 0;border-top:1px solid var(--line)}
+  .step:first-of-type{border-top:none;padding-top:0}
+  .step .k{font-family:Fraunces,Georgia,serif;font-size:26px;color:var(--red);font-weight:640;line-height:1.2}
+  .step b{display:block;font-size:17px;margin-bottom:6px}
+  .step p{color:var(--sub);font-size:15.5px;max-width:36em}
+  .step .tag{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--red);border:1px solid var(--red);border-radius:99px;padding:2px 12px;font-weight:600}
+
+  /* engine list */
+  .engine{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .engine .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+  .engine b{display:block;font-size:15px;margin-bottom:6px}
+  .engine p{font-size:14px;color:var(--sub)}
+
+  /* faq */
+  details{border-top:1px solid var(--line);padding:18px 0}
+  details:last-of-type{border-bottom:1px solid var(--line)}
+  summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-family:Fraunces,Georgia,serif;color:var(--red);font-size:22px;transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{margin-top:10px;color:var(--sub);font-size:15px;max-width:40em}
+
+  /* footer */
+  footer{padding:64px 0 80px}
+  .f-title{font-family:Fraunces,Georgia,serif;font-size:30px;font-weight:640;margin-bottom:10px}
+  .f-sub{color:var(--sub);margin-bottom:26px;max-width:36em}
+  .f-links{font-size:15px;line-height:2}
+  .f-links a{color:var(--red);text-decoration:none;font-weight:600}
+  .f-links a:hover{text-decoration:underline}
+  .fine{margin-top:36px;font-size:12.5px;color:var(--sub);border-top:1px solid var(--line);padding-top:18px}
+  .jp-line{margin-top:6px}
+  @media (max-width:560px){ .step{grid-template-columns:44px 1fr} }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="kicker">Japan Market Entry Partner</div>
-  <h1>Yusuke Furue</h1>
-  <p class="lede">I bring exceptional overseas products to Japan — launching them on Japan's leading "support purchase" crowdfunding platforms, then building their retail presence. Zero-risk structure for makers: I fund the launch, you keep control.</p>
 
-  <h2>How it works</h2>
-  <div class="steps">
-    <div class="card"><b>Launch — at my cost</b><p>Campaign on Makuake or GREEN FUNDING (CCC/Tsutaya group). I fund page production, video, PR and advertising. You provide product data and samples.</p></div>
-    <div class="card"><b>Demand-proven inventory</b><p>The first purchase order is placed only after the campaign confirms real demand. No speculative inventory commitments for either side.</p></div>
-    <div class="card"><b>Retail expansion</b><p>Own e-commerce, Amazon Japan, and wholesale to retail chains (Tsutaya Electrics, Loft, Hands) — using the campaign result as proof of traction.</p></div>
+<header>
+  <div class="wrap">
+    <div class="mark"><span class="dot"></span><span class="t">Japan Market Entry Partner</span></div>
+    <h1>I launch exceptional overseas products in <em>Japan</em> — at my cost, not yours.</h1>
+    <div class="who">
+      <span class="name">Yusuke Furue</span>
+      <span class="kanji jp">古江 勇介</span>
+      <span class="loc">Aichi, Japan (Nagoya area)</span>
+    </div>
+    <p class="hero-lede">Crowdfunding-first launches on Makuake and GREEN FUNDING, then retail. I fund the campaign, you keep control — inventory is ordered only after Japanese demand is proven.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="mailto:tremble3333@gmail.com">Email me about your product</a>
+      <a class="btn ghost" href="https://jp.linkedin.com/in/%E5%8F%A4%E6%B1%9F-%E5%8B%87%E4%BB%8B-b5b9b02a6">LinkedIn ↗</a>
+    </div>
   </div>
+</header>
 
-  <h2>Structure</h2>
-  <div class="card"><b>Time-boxed exclusivity</b><p>Platforms require an exclusive Japan distribution agreement. I propose a 12-month initial term — renewal beyond that is earned by campaign results, so your commitment stays limited and my incentives stay honest.</p></div>
-
-  <h2>Background</h2>
-  <div class="facts">
-    <div class="card"><div class="n">9 yrs</div><div class="l">in sales &amp; talent industry, starting at Recruit Co., Japan's largest HR group</div></div>
-    <div class="card"><div class="n">500+</div><div class="l">corporate clients served across consumer &amp; retail sectors</div></div>
-    <div class="card"><div class="n">3</div><div class="l">branch offices managed as executive of an HR services firm</div></div>
-    <div class="card"><div class="n">AI-first</div><div class="l">operations: localization, CS and marketing ops run lean with AI automation</div></div>
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="no">01</span><h2>Why work with me</h2></div>
+    <div class="proof">
+      <div><div class="n">9 yrs</div><div class="l">in sales &amp; account management, starting at Recruit Co. — Japan's largest HR &amp; media group</div></div>
+      <div><div class="n">500+</div><div class="l">corporate clients served across consumer &amp; retail sectors</div></div>
+      <div><div class="n">60+</div><div class="l">overseas products screened weekly by my proprietary scouting system before I reach out to anyone</div></div>
+      <div><div class="n">&lt; 24 h</div><div class="l">reply time. A one-page Japan plan lands in your inbox within a day of your first reply</div></div>
+    </div>
+    <p class="proof-note">If I contacted you, your product already passed screening on funding track record, unit economics, Japanese regulations and gray-market status.</p>
   </div>
+</section>
 
-  <div class="contact">
-    <b>Let's talk about your product's Japan launch.</b><br>
-    Email: <a href="mailto:tremble3333@gmail.com">tremble3333@gmail.com</a> ·
-    LinkedIn: <a href="https://jp.linkedin.com/in/%E5%8F%A4%E6%B1%9F-%E5%8B%87%E4%BB%8B-b5b9b02a6">Yusuke Furue</a>
-    <div class="foot">Independent distributor based in Aichi, Japan. Correspondence in English welcome.</div>
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="no">02</span><h2>How a launch works</h2></div>
+    <div class="step">
+      <div class="k">i</div>
+      <div><b>Campaign — funded by me</b>
+      <p>Launch on Makuake or GREEN FUNDING (CCC/Tsutaya group — campaigns feed into Tsutaya Electrics stores). I pay for page production, video, PR and ads. You provide product data, assets and a few samples.</p>
+      <span class="tag">Your cost: samples only</span></div>
+    </div>
+    <div class="step">
+      <div class="k">ii</div>
+      <div><b>Demand-proven inventory</b>
+      <p>The first purchase order is placed only after the campaign closes with confirmed backers. No speculative stock for either side. Campaign funds are reserved until goods land in Japan — backers always get their product or their money back.</p>
+      <span class="tag">Your risk: time-boxed</span></div>
+    </div>
+    <div class="step">
+      <div class="k">iii</div>
+      <div><b>Retail expansion</b>
+      <p>Own e-commerce and Amazon Japan first, then wholesale to chains such as Tsutaya Electrics, Loft and Hands — with the campaign result as proof of traction.</p>
+      <span class="tag">Your upside: a real Japan channel</span></div>
+    </div>
   </div>
-</div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="no">03</span><h2>Built different: AI-operated, founder-led</h2></div>
+    <div class="engine">
+      <div class="card"><b>Scouting engine</b><p>An automated system scans global crowdfunding successes daily and checks Japanese regulations, duties and gray-market presence — before any outreach.</p></div>
+      <div class="card"><b>Lean by design</b><p>Localization, ad copy, customer support and reporting run on AI operations I build myself. No agency layers eating the margin.</p></div>
+      <div class="card"><b>One partner, full stack</b><p>You deal with one person from first email to retail shelf: me. Executive-level experience, operator-level hands.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="no">04</span><h2>Honest terms, upfront</h2></div>
+    <details open>
+      <summary>Why do you need an exclusive agreement?</summary>
+      <p>Japanese crowdfunding platforms require an exclusive Japan distribution agreement to list an overseas product. I propose a time-boxed 12-month exclusive — renewal beyond that is earned by campaign results, not assumed.</p>
+    </details>
+    <details>
+      <summary>Who handles certifications and import compliance?</summary>
+      <p>I do. Duties, HS classification, PSE/radio-law screening and product-labeling rules are checked before I ever contact a maker, and verified with Japanese customs before contracts.</p>
+    </details>
+    <details>
+      <summary>What do you need from us?</summary>
+      <p>Product data and media assets, 2–5 samples, wholesale terms, and a commitment to hold back direct Japan sales during the campaign window. That's it.</p>
+    </details>
+    <details>
+      <summary>Do we need calls?</summary>
+      <p>Everything can move over email — usually faster across time zones. Contracts are reviewed by Japanese legal professionals before signing.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-title serif">Let's talk about your product's Japan launch.</div>
+    <p class="f-sub">Tell me what you make and where you are with it. If it fits the Japanese market, you'll have a concrete plan — target figures, timeline, terms — within days, not months.</p>
+    <div class="f-links">
+      Email — <a href="mailto:tremble3333@gmail.com">tremble3333@gmail.com</a><br>
+      LinkedIn — <a href="https://jp.linkedin.com/in/%E5%8F%A4%E6%B1%9F-%E5%8B%87%E4%BB%8B-b5b9b02a6">Yusuke Furue</a>
+    </div>
+    <div class="fine">
+      Independent distributor (sole proprietor), Aichi, Japan. Correspondence in English welcome.
+      <div class="jp-line jp">海外プロダクトの日本市場参入支援 — 古江勇介</div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
