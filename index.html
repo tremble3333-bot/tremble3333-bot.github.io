@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yusuke Furue — Japan Launch, Funded by Me</title>
-<meta name="description" content="For makers with a proven crowdfunding product: I fund and run your Japan launch. You never pay me anything, exclusivity expires after 12 months, and the due-diligence on your product is already done.">
+<meta name="description" content="For makers with a proven crowdfunding product: I fund and run your Japan launch on Makuake or GREEN FUNDING. You never pay me anything, and exclusivity expires after 12 months.">
 <meta property="og:title" content="You proved the demand. I'll fund the Japan launch.">
 <meta property="og:description" content="No fees, no retainers. Exclusivity expires — 12 months, then it's yours again. A transparent Japan launch structure for proven crowdfunding products.">
 <meta property="og:type" content="website">
@@ -12,82 +12,132 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='34' fill='%23c73e3a'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,640&family=Inter:wght@400;500;600&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,480;9..144,560;9..144,640&family=Inter:wght@400;500;600;700&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#191817; --paper:#faf8f4; --sub:#6b6660; --line:#e6e1d8;
-    --red:#c73e3a;
-    --card:#ffffff;
+    --ink:#1c1a18; --paper:#f7f5f1; --sub:#6d675f; --line:#e4dfd6;
+    --red:#c2402f;
+    --card:#fffdf9;
   }
   @media (prefers-color-scheme: dark){
-    :root{ --ink:#ece9e2; --paper:#171614; --sub:#9b968e; --line:#33302b; --card:#201e1b; }
+    :root{ --ink:#ece9e2; --paper:#161513; --sub:#9b968e; --line:#2f2c27; --card:#1e1c19; }
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{background:var(--paper);color:var(--ink);font-family:Inter,"Hiragino Sans",sans-serif;line-height:1.7;font-size:16px}
+  body{background:var(--paper);color:var(--ink);font-family:Inter,"Hiragino Sans",sans-serif;line-height:1.7;font-size:16.5px}
   .serif{font-family:Fraunces,Georgia,serif}
   .jp{font-family:"Noto Serif JP","Hiragino Mincho ProN",serif}
-  .wrap{max-width:840px;margin:0 auto;padding:0 28px}
+  .wrap{max-width:880px;margin:0 auto;padding:0 28px}
+  ::selection{background:var(--red);color:#fff}
 
-  header{padding:84px 0 64px;border-bottom:1px solid var(--line)}
-  .mark{display:flex;align-items:center;gap:10px;margin-bottom:34px}
-  .mark .dot{width:12px;height:12px;border-radius:50%;background:var(--red)}
-  .mark .t{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--sub);font-weight:600}
-  h1{font-family:Fraunces,Georgia,serif;font-weight:640;font-size:clamp(34px,6.6vw,60px);line-height:1.12;letter-spacing:-.01em;max-width:14em}
+  /* ---------- hero ---------- */
+  header{padding:104px 0 88px}
+  .mark{display:flex;align-items:center;gap:11px;margin-bottom:44px}
+  .mark .dot{width:13px;height:13px;border-radius:50%;background:var(--red)}
+  .mark .t{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--sub);font-weight:600}
+  h1{font-family:Fraunces,Georgia,serif;font-weight:560;font-size:clamp(40px,7.2vw,68px);line-height:1.08;letter-spacing:-.015em;max-width:13.5em}
   h1 em{font-style:normal;color:var(--red)}
-  .hero-lede{margin-top:20px;font-size:17.5px;color:var(--sub);max-width:40em}
-  .hero-lede b{color:var(--ink)}
-  .hero-cta{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-  .btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none}
+  .hero-lede{margin-top:26px;font-size:18.5px;color:var(--sub);max-width:37em}
+  .hero-lede b{color:var(--ink);font-weight:600}
+  .hero-cta{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+  .btn{display:inline-block;padding:15px 30px;border-radius:8px;font-weight:600;font-size:15.5px;text-decoration:none;transition:transform .12s ease, opacity .12s ease}
   .btn.primary{background:var(--red);color:#fff}
-  .btn.ghost{border:1px solid var(--line);color:var(--ink)}
-  .btn:hover{opacity:.88}
+  .btn.ghost{border:1.5px solid var(--line);color:var(--ink);background:var(--card)}
+  .btn:hover{opacity:.9;transform:translateY(-1px)}
+  .cta-note{font-size:13px;color:var(--sub)}
 
-  section{padding:60px 0;border-bottom:1px solid var(--line)}
-  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+  /* ---------- numbers panel ---------- */
+  .numbers{border-block:1px solid var(--line);background:var(--card)}
+  .numbers .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+  .num{padding:44px 28px 40px;border-left:1px solid var(--line)}
+  .num:first-child{border-left:none;padding-left:0}
+  .num .n{font-family:Fraunces,Georgia,serif;font-weight:640;font-size:clamp(30px,4.4vw,44px);color:var(--red);letter-spacing:-.01em;line-height:1.1}
+  .num .l{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);font-weight:600;margin-top:10px}
+  .num .echo{font-size:13.5px;color:var(--sub);margin-top:6px;line-height:1.55}
+  @media (max-width:680px){ .numbers .wrap{grid-template-columns:1fr} .num{border-left:none;border-top:1px solid var(--line);padding-left:0} .num:first-child{border-top:none} }
+
+  /* ---------- sections ---------- */
+  section{padding:96px 0 0}
+  section .inner{border-top:1px solid var(--line);padding-top:64px}
+  section:first-of-type .inner{border-top:none;padding-top:0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
   .sec-head .no{font-family:Fraunces,Georgia,serif;color:var(--red);font-size:15px;font-weight:640}
-  h2{font-family:Fraunces,Georgia,serif;font-weight:640;font-size:26px;letter-spacing:-.01em}
-  .sec-lede{color:var(--sub);margin:-14px 0 26px;max-width:42em}
+  h2{font-family:Fraunces,Georgia,serif;font-weight:560;font-size:clamp(26px,3.6vw,34px);letter-spacing:-.012em}
+  .sec-lede{color:var(--sub);margin-bottom:40px;max-width:44em;font-size:16.5px}
 
-  .diff{display:grid;gap:14px}
-  .diff .card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:8px;padding:20px 22px}
-  .diff b{display:block;font-size:16.5px;margin-bottom:5px}
-  .diff p{font-size:15px;color:var(--sub);max-width:44em}
+  /* doubts */
+  .doubt{border-left:3px solid var(--line);padding:6px 0 6px 24px;margin:0 0 22px;max-width:40em}
+  .doubt p{font-family:Fraunces,Georgia,serif;font-size:19px;font-weight:480;line-height:1.5;color:var(--ink)}
+  .doubt .who{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin-top:6px;font-weight:600}
 
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-  .split>div{background:var(--card);padding:22px}
-  .split h3{font-family:Fraunces,Georgia,serif;font-size:17px;margin-bottom:12px}
+  .answers{display:grid;gap:16px;margin-top:44px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px 28px}
+  .card b{display:block;font-size:17px;margin-bottom:7px;font-weight:600}
+  .card p{font-size:15.5px;color:var(--sub);max-width:46em}
+  .card p strong{color:var(--ink);font-weight:600}
+
+  /* money flow */
+  .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0;margin:44px 0 10px}
+  .fnode{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+  .fnode .t{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:8px}
+  .fnode b{display:block;font-size:15.5px;margin-bottom:6px}
+  .fnode p{font-size:13.5px;color:var(--sub);line-height:1.55}
+  .farrow{display:flex;align-items:center;padding:0 14px;color:var(--red);font-family:Fraunces,Georgia,serif;font-size:26px;font-weight:640}
+  @media (max-width:760px){ .flow{grid-template-columns:1fr} .farrow{padding:6px 0;justify-content:center;transform:rotate(90deg)} }
+  .flow-note{font-size:13px;color:var(--sub);margin-bottom:44px}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .split>div{background:var(--card);padding:26px 28px}
+  .split h3{font-family:Fraunces,Georgia,serif;font-size:18px;margin-bottom:14px;font-weight:560}
   .split ul{list-style:none}
-  .split li{font-size:14.5px;color:var(--sub);padding:5px 0 5px 20px;position:relative}
+  .split li{font-size:14.5px;color:var(--sub);padding:6px 0 6px 22px;position:relative}
   .split li::before{content:"—";position:absolute;left:0;color:var(--red)}
   @media (max-width:600px){ .split{grid-template-columns:1fr} }
 
-  .step{display:grid;grid-template-columns:64px 1fr;gap:0 20px;padding:22px 0;border-top:1px solid var(--line)}
+  /* benchmarks table */
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .tbl-wrap{overflow-x:auto;border-radius:12px}
+  th,td{text-align:left;padding:15px 20px;border-top:1px solid var(--line);font-size:14.5px}
+  thead th{border-top:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--sub);font-weight:600;background:var(--card)}
+  td.amt{font-family:Fraunces,Georgia,serif;font-weight:640;color:var(--red);font-size:17px;white-space:nowrap}
+  td .pct{color:var(--sub);font-size:12.5px;margin-left:6px}
+  .tbl-note{font-size:13px;color:var(--sub);margin-top:12px}
+
+  /* steps */
+  .step{display:grid;grid-template-columns:80px 1fr;gap:0 24px;padding:26px 0;border-top:1px solid var(--line)}
   .step:first-of-type{border-top:none;padding-top:0}
-  .step .k{font-family:Fraunces,Georgia,serif;font-size:22px;color:var(--red);font-weight:640;line-height:1.4}
-  .step b{display:block;font-size:16.5px;margin-bottom:4px}
-  .step p{color:var(--sub);font-size:15px;max-width:38em}
+  .step .k{font-family:Fraunces,Georgia,serif;font-size:20px;color:var(--red);font-weight:640;line-height:1.5}
+  .step b{display:block;font-size:17px;margin-bottom:5px;font-weight:600}
+  .step p{color:var(--sub);font-size:15.5px;max-width:40em}
+  @media (max-width:560px){ .step{grid-template-columns:1fr;gap:4px} }
 
-  details{border-top:1px solid var(--line);padding:18px 0}
+  /* faq */
+  details{border-top:1px solid var(--line);padding:20px 0}
   details:last-of-type{border-bottom:1px solid var(--line)}
-  summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  summary{cursor:pointer;font-weight:600;font-size:16.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
   summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";font-family:Fraunces,Georgia,serif;color:var(--red);font-size:22px;flex-shrink:0;transition:transform .2s}
+  summary::after{content:"+";font-family:Fraunces,Georgia,serif;color:var(--red);font-size:24px;flex-shrink:0;transition:transform .2s}
   details[open] summary::after{transform:rotate(45deg)}
-  details p{margin-top:10px;color:var(--sub);font-size:15px;max-width:42em}
+  details p{margin-top:12px;color:var(--sub);font-size:15.5px;max-width:44em}
 
-  .about{display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
-  .about .names{font-size:18px;font-weight:600}
-  .about .kanji{color:var(--sub)}
-  .about-body{margin-top:12px;color:var(--sub);font-size:15.5px;max-width:44em}
+  /* about */
+  .about-grid{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start}
+  .hanko{width:76px;height:76px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .hanko span{font-family:"Noto Serif JP",serif;color:#fff;font-size:26px;line-height:1.1;text-align:center}
+  .about .names{font-size:19px;font-weight:600}
+  .about .kanji{color:var(--sub);margin-left:12px}
+  .about-body{margin-top:10px;color:var(--sub);font-size:15.5px;max-width:42em}
+  @media (max-width:560px){ .about-grid{grid-template-columns:1fr} }
 
-  footer{padding:60px 0 80px}
-  .f-title{font-family:Fraunces,Georgia,serif;font-size:29px;font-weight:640;margin-bottom:10px}
-  .f-sub{color:var(--sub);margin-bottom:24px;max-width:38em}
-  .f-links{font-size:15px;line-height:2}
+  /* footer */
+  footer{padding:104px 0 96px}
+  footer .inner{border-top:1px solid var(--line);padding-top:72px}
+  .f-title{font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4.6vw,42px);font-weight:560;margin-bottom:14px;letter-spacing:-.012em}
+  .f-sub{color:var(--sub);margin-bottom:30px;max-width:38em;font-size:16.5px}
+  .f-links{margin-top:26px;font-size:15px;line-height:2.1}
   .f-links a{color:var(--red);text-decoration:none;font-weight:600}
   .f-links a:hover{text-decoration:underline}
-  .fine{margin-top:36px;font-size:12.5px;color:var(--sub);border-top:1px solid var(--line);padding-top:18px}
+  .fine{margin-top:44px;font-size:12.5px;color:var(--sub);border-top:1px solid var(--line);padding-top:20px}
 </style>
 </head>
 <body>
@@ -99,31 +149,66 @@
     <p class="hero-lede">You've already won on Kickstarter or Indiegogo. I launch your product on Japan's top crowdfunding platforms at my own expense — and buy inventory only after Japanese demand is proven. <b>You never pay me anything. Exclusivity expires — 12 months, then it's yours again.</b></p>
     <div class="hero-cta">
       <a class="btn primary" href="mailto:tremble3333@gmail.com">Email me about your product</a>
-      <a class="btn ghost" href="https://jp.linkedin.com/in/%E5%8F%A4%E6%B1%9F-%E5%8B%87%E4%BB%8B-b5b9b02a6">LinkedIn ↗</a>
+      <span class="cta-note">One line is enough. A concrete plan comes back within one business day.</span>
     </div>
   </div>
 </header>
 
-<section>
+<div class="numbers">
   <div class="wrap">
-    <div class="sec-head"><span class="no">01</span><h2>You probably get "distributor" emails every week</h2></div>
-    <p class="sec-lede">Most want your exclusivity for nothing, or your money for "marketing packages." Here's how this one is different:</p>
-    <div class="diff">
-      <div class="card"><b>Money flows one way — toward you</b>
-      <p>You never pay me anything. Not now, not later, not for "marketing." I pay for the campaign page, video, PR and advertising — a dedicated seven-figure yen budget per launch — and I buy your inventory at wholesale. If anyone — me included — asks you to pay for a Japan launch, walk away.</p></div>
-      <div class="card"><b>Exclusivity with an expiry date — in writing</b>
-      <p>Japanese platforms require an exclusive Japan distribution agreement to list your product. I propose 12 months, with the renewal target written into the agreement — a number we set together against platform category benchmarks, not one I hand you. Miss it, and all rights revert within 30 days of the campaign closing — not at month 12.</p></div>
-      <div class="card"><b>The due diligence is already done</b>
-      <p>Before contacting you, I checked Japanese import duties, certification requirements and gray-market listings for your product. You'll have that memo, without your asking, together with a one-page Japan plan — within one business day of your reply. Trademark and customs classification get formally confirmed before we sign anything.</p></div>
-      <div class="card"><b>What it actually costs you</b>
-      <p>A few samples, a 12-month exclusive, and holding back direct Japan sales during the campaign window. That's real, and I won't pretend it's "free." What you never spend is cash.</p></div>
+    <div class="num">
+      <div class="n">¥0</div>
+      <div class="l">What you ever pay me</div>
+      <div class="echo">Production, video, PR, ads, compliance — all on my budget, not yours.</div>
+    </div>
+    <div class="num">
+      <div class="n">¥110B+</div>
+      <div class="l">Spent on Makuake to date</div>
+      <div class="echo">Japan's "support purchase" market is the standard entry route for overseas products.</div>
+    </div>
+    <div class="num">
+      <div class="n">12 mo</div>
+      <div class="l">Then exclusivity expires</div>
+      <div class="echo">Written into the contract. Renewal is earned by results — never assumed.</div>
     </div>
   </div>
+</div>
+
+<section>
+  <div class="wrap"><div class="inner">
+    <div class="sec-head"><span class="no">01</span><h2>You've heard this pitch before. Differently.</h2></div>
+    <p class="sec-lede">If you've run a successful campaign, your inbox already has "distributor" emails in it. You're probably thinking one of these:</p>
+
+    <div class="doubt"><p>"They all want our exclusivity — and then nothing happens for a year."</p><div class="who">Every maker who's been burned</div></div>
+    <div class="doubt"><p>"Sooner or later there's a fee. 'Marketing package,' 'registration,' something."</p><div class="who">Correct, usually</div></div>
+    <div class="doubt"><p>"Japan sounds interesting, but certifications and language make it a black box."</p><div class="who">Fair concern</div></div>
+
+    <div class="answers">
+      <div class="card"><b>Money flows one way — toward you</b>
+      <p>You never pay me anything. Not now, not later, not for "marketing." I pay for the campaign page, video, PR and advertising — <strong>a dedicated seven-figure yen budget per launch</strong> — and I buy your inventory at wholesale. If anyone — me included — asks you to pay for a Japan launch, walk away.</p></div>
+      <div class="card"><b>Exclusivity with an expiry date — in writing</b>
+      <p>Japanese platforms require an exclusive Japan distribution agreement to list your product. I propose 12 months, with the renewal target written into the agreement — a number we set together against platform category benchmarks. <strong>Miss it, and all rights revert within 30 days of the campaign closing</strong> — not at month 12.</p></div>
+      <div class="card"><b>The black box is my job — and it's already open</b>
+      <p>Before contacting you, I checked Japanese import duties, certification requirements and gray-market listings for your product. You'll have that due-diligence memo, without your asking, together with a one-page Japan plan — <strong>within one business day of your reply</strong>.</p></div>
+      <div class="card"><b>What it actually costs you</b>
+      <p>A few samples, a 12-month exclusive, and holding back direct Japan sales during the campaign window. That's real, and I won't pretend it's "free." <strong>What you never spend is cash.</strong></p></div>
+    </div>
+  </div></div>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="sec-head"><span class="no">02</span><h2>The deal, in plain terms</h2></div>
+  <div class="wrap"><div class="inner">
+    <div class="sec-head"><span class="no">02</span><h2>How the money moves</h2></div>
+
+    <div class="flow">
+      <div class="fnode"><div class="t">You</div><b>Samples &amp; data</b><p>2–5 samples, product assets, wholesale terms. No cash, ever.</p></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><div class="t">Me</div><b>I fund the launch</b><p>Page, video, PR, ads, compliance. Campaign runs 6–8 weeks on Makuake or GREEN FUNDING.</p></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><div class="t">Japan</div><b>Demand pays first</b><p>Backer funds stay in reserve until goods land. Then a wholesale PO to you, sized to confirmed demand — and on to retail.</p></div>
+    </div>
+    <p class="flow-note">Under Japanese platform rules, the seller — me, not you — is liable for backer refunds if rewards don't ship. Holding funds in reserve keeps that liability covered at all times.</p>
+
     <div class="split">
       <div>
         <h3>You provide</h3>
@@ -138,28 +223,51 @@
         <h3>I provide</h3>
         <ul>
           <li>Campaign production &amp; all marketing costs</li>
-          <li>Import compliance — I'm the importer of record, with product-liability insurance on my side</li>
+          <li>Import compliance — importer of record, PL insurance on my side</li>
           <li>Localization, customer support, logistics</li>
           <li>Post-campaign retail: Amazon Japan, e-commerce, chain-store placement</li>
         </ul>
       </div>
     </div>
-  </div>
+  </div></div>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="sec-head"><span class="no">03</span><h2>Timeline</h2></div>
+  <div class="wrap"><div class="inner">
+    <div class="sec-head"><span class="no">03</span><h2>What overseas products raise in Japan</h2></div>
+    <p class="sec-lede">Public results from Makuake — the market you'd be entering. These are category benchmarks, not my campaigns; the numbers are why this structure works.</p>
+    <div class="tbl-wrap">
+    <table>
+      <thead><tr><th>Product</th><th>Category</th><th>Raised on Makuake</th></tr></thead>
+      <tbody>
+        <tr><td>QUICK PACK pockepa</td><td>Backpack</td><td class="amt">¥16M+<span class="pct">≈ $110K</span></td></tr>
+        <tr><td>HOLICC One</td><td>Compression backpack</td><td class="amt">¥10M+<span class="pct">≈ $70K</span></td></tr>
+        <tr><td>YFLife AIRbox</td><td>Air purifier</td><td class="amt">¥10M<span class="pct">1,000+ backers</span></td></tr>
+        <tr><td>QUICK PACK 9</td><td>Minimal bag</td><td class="amt">¥7.7M<span class="pct">2,566% of goal</span></td></tr>
+        <tr><td>LG PuriCare AeroFurniture</td><td>Design appliance</td><td class="amt">¥6.9M<span class="pct">1,389% of goal</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="tbl-note">Sixty-plus Makuake projects have crossed ¥100M. A well-run overseas product debut typically lands between ¥3M and ¥30M — and the campaign is only the entrance to retail.</p>
+  </div></div>
+</section>
+
+<section>
+  <div class="wrap"><div class="inner">
+    <div class="sec-head"><span class="no">04</span><h2>Timeline</h2></div>
     <div class="step"><div class="k">wk 1</div><div><b>Terms &amp; plan</b><p>Within one business day of your reply: a one-page Japan plan with target figures, plus the due-diligence memo on your product. An NDA and a short plain-English agreement follow, both reviewed by a Japanese attorney.</p></div></div>
     <div class="step"><div class="k">wk 2–8</div><div><b>Production &amp; platform review</b><p>I build the Japanese campaign page and clear the platform's review — Makuake, or GREEN FUNDING, whose campaigns can carry over into Tsutaya Electrics retail displays.</p></div></div>
-    <div class="step"><div class="k">wk 9–16</div><div><b>Campaign</b><p>A 6–8 week campaign. Under Japanese platform rules, the seller — me, not you — is liable for backer refunds if rewards don't ship. My own rule keeps that covered: campaign funds stay in reserve until your goods land in Japan. You see everything.</p></div></div>
+    <div class="step"><div class="k">wk 9–16</div><div><b>Campaign</b><p>A 6–8 week campaign. You see everything: dashboards, spend, backer numbers, in a weekly report.</p></div></div>
     <div class="step"><div class="k">after</div><div><b>Retail, or a clean exit</b><p>Hit the target: a first purchase order sized to campaign demand plus a retail buffer, then Amazon Japan and retail chains. Miss it: all rights revert within 30 days, you keep the market data, and your total cost was a few samples.</p></div></div>
-  </div>
+    <div class="hero-cta" style="margin-top:40px">
+      <a class="btn primary" href="mailto:tremble3333@gmail.com">Email me about your product</a>
+    </div>
+  </div></div>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="sec-head"><span class="no">04</span><h2>Common questions</h2></div>
+  <div class="wrap"><div class="inner">
+    <div class="sec-head"><span class="no">05</span><h2>Common questions</h2></div>
     <details open>
       <summary>Why should I trust a one-person operation?</summary>
       <p>Fair question — you should ask it. You deal with me directly: one named individual you can verify on LinkedIn, with my own money at risk on your product. Behind the scenes, software I built handles the repetitive work — research, first-pass translation, reporting — so one person can move at agency speed without agency overhead. Every commitment on this page is mine, personally.</p>
@@ -176,24 +284,27 @@
       <summary>Do we need calls?</summary>
       <p>We can run everything over email — usually faster across time zones. A 20-minute video call before signing? Of course, happily. Contracts are in plain English.</p>
     </details>
-  </div>
+  </div></div>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="sec-head"><span class="no">05</span><h2>Who you're dealing with</h2></div>
-    <div class="about">
-      <span class="names">Yusuke Furue</span>
-      <span class="kanji jp">古江 勇介</span>
+  <div class="wrap"><div class="inner">
+    <div class="sec-head"><span class="no">06</span><h2>Who you're dealing with</h2></div>
+    <div class="about-grid">
+      <div class="hanko"><span>古江</span></div>
+      <div class="about">
+        <span class="names">Yusuke Furue</span><span class="kanji jp">古江 勇介</span>
+        <p class="about-body">Based in Tokyo. Nine years in enterprise sales at Japan's largest HR &amp; media group, then executive experience running a three-branch services firm — then I built the software that lets one person run this end to end. Japan launches are my own venture, funded with my own money, which is why the terms above are the terms.</p>
+      </div>
     </div>
-    <p class="about-body">Based in Tokyo. Nine years in enterprise sales at Japan's largest HR &amp; media group, then executive experience running a three-branch services firm — then I built the software that lets one person run this end to end. Japan launches are my own venture, funded with my own money, which is why the terms above are the terms.</p>
-  </div>
+  </div></div>
 </section>
 
 <footer>
-  <div class="wrap">
+  <div class="wrap"><div class="inner">
     <div class="f-title serif">Send me one line about your product.</div>
     <p class="f-sub">Include a link to your campaign or store. If it fits Japan, you'll have a concrete plan — figures, timeline, terms — within one business day.</p>
+    <a class="btn primary" href="mailto:tremble3333@gmail.com">Email me about your product</a>
     <div class="f-links">
       Email — <a href="mailto:tremble3333@gmail.com">tremble3333@gmail.com</a><br>
       LinkedIn — <a href="https://jp.linkedin.com/in/%E5%8F%A4%E6%B1%9F-%E5%8B%87%E4%BB%8B-b5b9b02a6">Yusuke Furue</a>
@@ -202,7 +313,7 @@
       Independent distributor (sole proprietor), Tokyo, Japan.
       <div class="jp" style="margin-top:6px">海外プロダクトの日本市場参入支援 — 古江勇介</div>
     </div>
-  </div>
+  </div></div>
 </footer>
 
 </body>
